@@ -1,0 +1,85 @@
+main h2 {
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+
+/* ===========================  LOGIN  =========================== */
+.login_box {
+    background-color: var(--bgcolor-orange);
+    padding: 30px 25px;
+    margin: 0 25px;
+    border: 4px solid rgb(197, 133, 15);
+    border-radius: 20px;
+}
+
+main form {
+    text-align: left;
+}
+
+main form label {
+    letter-spacing: 1px;
+}
+
+main input {
+    display: block;
+}
+
+main input[type=text],
+main input[type=password] {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0px black;
+}
+
+main input[type=button] {
+    margin: 40px auto;
+}
+
+.login_options,
+.login_options p,
+.login_options a,
+.login_options span {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 1.6;
+    color: var(--bgcolor-darkBlue);
+}
+
+.login_options span {
+    text-transform: lowercase;
+}
+
+.login_options a {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* =============================================================== */
+
+
+
+/* ===========================  RESET PASSWORD  =========================== */
+.resetparagraph {
+    padding: 0 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 1.4rem;
+    color: var(--bgcolor-darkBlue);
+}
+
+.go_back_href {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    text-align: left;
+}
+
+/* =============================================================== */

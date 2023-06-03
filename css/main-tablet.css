@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+    :root {
+        --font-h1-size: 7rem;
+        --font-h2-size: 3.4rem;
+        --font-p-size: 2.8rem;
+        --font-label-size: 2.6rem;
+    }
+
+    .img_logo {
+        width: 50%;
+    }
+
+    .blue_button,
+    input[type=button] {
+        padding: 25px 40px;
+    }
+
+    .phone_number_boxDisplay {
+        width: 60%;
+    }
+
+
+    /* ===========================  NAVBAR  =========================== */
+    nav {
+        width: 60%;
+        padding: 0 10px 40px;
+    }
+
+    nav ul>li>a {
+        padding: 0 40px;
+    }
+
+    nav ul>a {
+        padding: 20px;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  HEADER  =========================== */
+    header button,
+    nav button {
+        font-size: 35px;
+    }
+
+    header .nav_contacts button,
+    header .nav_contacts .link_button {
+        width: 7vh;
+    }
+
+    header .nav_contacts .link_button {
+        font-size: 35px;
+    }
+
+    .nav_contacts {
+        margin-right: 20px;
+    }
+
+    header button:first-of-type {
+        margin-left: 10px;
+    }
+    /* =============================================================== */
+
+}

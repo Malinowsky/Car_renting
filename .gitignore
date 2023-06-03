@@ -1,0 +1,7 @@
+# MS Word and OpenOffice
+*.odt
+*.doc
+*.docx
+
+# PDFs
+*.pdf

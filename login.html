@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia aut sportowych</title>
+
+    <!-- styles -->
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- phone styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- tablet styles -->
+    <link rel="stylesheet" href="css/main-tablet.css">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="cars.html">samochody</a></li>
+                <li><a href="about.html">dlaczego my?</a></li>
+                <li><a href="voucher.html">vouchery</a></li>
+                <li><a href="howworks.html">jak to działa?</a></li>
+                <a href="cars.html">zarezerwuj</a>
+                <div class="phone_number_box">
+                    <p>Skontaktuj sie z nami</p>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="header clearfix">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_contacts">
+                <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
+                <button><a class="link_button" href="index.html"><i class="fa-solid fa-house"></i></a></button>
+                <div class="phone_number_boxDisplay">
+                    <div class="phone_number_box">
+                        <p>Skontaktuj sie z nami</p>
+                        <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                        <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main_wrap">
+                <div class="login_box">
+                    <h2>logowanie</h2>
+                    <form action="#">
+                        <label for="email">wpisz e-mail:</label>
+                        <input type="text" name="email" id="email">
+                        <label for="password">wpisz hasło:</label>
+                        <input type="password" name="password" id="password">
+                        <input type="button" value="zaloguj się">
+                    </form>
+                    <div class="login_options">
+                        <p>
+                            <a href="resetpass.html">Zapomniałeś(aś) hasła?</a>
+                        </p>
+                        <span>albo</span>
+                        <p>Nie posiadasz konta? <a href="registeraccount.html">ZAREJESTRUJ SIĘ</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="contact">
+            <div class="phone_email">
+                <div class="nav_contacts">
+                    <h1 class="company_name">szybka jazda</h1>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h2>napisz do nas</h2>
+                <form action="#">
+                    <label for="user-email">Twoj adres e-mail:</label>
+                    <input id="user-email" type="text">
+                    <label for="user-message">Treść wiadomości:</label>
+                    <input id="user-email" type="textarea">
+                    <div class="checkbox_div">
+                        <input type="checkbox" name="personal-data" id="personal-data">Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności
+                    </div>
+                    <input type="button" value="WYŚLIJ WIADOMOŚĆ">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p><span>szybka jazda</span> &copy; 2023 Copyright Szybka Jazda</p>
+        </footer>
+    </div>
+
+    <script src="js/toggle.js"></script>
+</body>
+
+</html>

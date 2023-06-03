@@ -1,0 +1,418 @@
+/* Fonts from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Condensed', sans-serif;
+*/
+
+
+/* =============  variables  ============= */
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-condensed: 'Roboto Condensed', sans-serif;
+    --font-h1-size: 2.6rem;
+    --font-h2-size: 2.4rem;
+    --font-p-size: 1.8rem;
+    --font-label-size: 1.6rem;
+
+    --bgcolor-whiteTxt: #F5F5F5;
+    --bgcolor-darkBlue: #120C56;
+    --bgcolor-orange: #FFC632;
+    --bgcolor-red: #FF0000;
+
+    --bghover-darkBlue: #1f167d;
+    --bghover-orange: #d1a127;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: var(--font-roboto);
+}
+
+body {
+    background-image: url('https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/99-worlds-fastest-production-cars-lead.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1, h2, button {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: var(--font-h2-size);
+}
+
+p, a, button {
+    font-size: var(--font-p-size);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: var(--font-label-size);
+}
+
+
+/* ---------------- blue button ---------------- */
+.blue_button,
+input[type=button] {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    background-color: var(--bgcolor-darkBlue);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: var(--font-p-size);
+    color: var(--bgcolor-whiteTxt);
+    transition: .3s;
+}
+
+.blue_button:hover,
+input[type=button] {
+    background-color: var(--bghover-darkBlue);
+}
+/* --------------------------------------------- */
+
+
+/* ---------------- company name ---------------- */
+.company_name {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: var(--font-h1-size);
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgb(104, 104, 104);
+}
+/* --------------------------------------------- */
+
+
+/* ---------------- phone and email box ---------------- */
+.phone_number_box {
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.phone_number_box a {
+    display: block;
+}
+
+.phone_number_box a>i {
+    padding-right: 10px;
+}
+
+.phone_number_box p {
+    margin-bottom: 5px;
+}
+/* --------------------------------------------- */
+ 
+
+/* ---------------- phone and email box display ---------------- */
+.phone_number_boxDisplay {
+    display: none;
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 25px 5px black;
+    background-color: var(--bgcolor-orange);
+    z-index: 1000;
+    overflow: hidden;
+}
+/* --------------------------------------------- */
+
+.img_logo {
+    width: 70%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* ===========================  HEADER  =========================== */
+.navbar {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    padding-bottom: 20px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 0 25px 5px black;
+    background-color: var(--bgcolor-orange);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul>li>a {
+    display: block;
+    padding: 0 20px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-size: var(--font-p-size);
+    font-weight: 700;
+}
+
+nav ul>a {
+    display: block;
+    padding: 10px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bgcolor-whiteTxt);
+    background-color: var(--bgcolor-darkBlue);
+}
+
+/* nav ul>li:nth-last-of-type(1)::after {
+    display: block;
+    content: "";
+    margin-top: 10px;
+    border-top: 1px dashed black;
+}
+
+nav ul>.phone_number_box::before {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-top: 1px dashed black; 
+}*/
+
+nav ul>li>a:hover {
+    background-color: var(--bghover-orange);
+}
+
+nav button i {
+    font-size: 35px;
+}
+
+.display-block {
+    display: block;
+}
+/* =============================================================== */
+
+
+
+/* ===========================  HEADER  =========================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-basis: 8vh;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--bgcolor-darkBlue);
+    box-shadow: 0 0 10px 3px black;
+    z-index: 999;
+}
+
+header button,
+nav button {
+    width: 8vh;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+header .nav_contacts button,
+header .nav_contacts .link_button {
+    width: 6vh;
+}
+
+header .nav_contacts .link_button {
+    font-size: 25px;
+}
+
+header .nav_contacts button:last-child {
+    margin-right: 10px;
+}
+
+header button i {
+    color: var(--bgcolor-orange);
+}
+
+header .nav_contacts {
+    margin-right: 10px;
+    float: right;
+}
+/* =============================================================== */
+
+
+
+/* ===========================  MAIN  =========================== */
+main {
+    flex-basis: 100vh;
+    font-size: 30px;
+    font-family: var(--font-roboto-condensed);
+    line-height: 1;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--bgcolor-whiteTxt);
+}
+
+.main_wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main i {
+    margin-top: 25px;
+    font-size: 90px;
+}
+
+main .main_buttons {
+    margin-top: 80px;
+}
+/* =============================================================== */
+
+
+/* ===========================  SECTION  =========================== */
+section.contact {
+    flex-basis: 82vh;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--bgcolor-orange);
+}
+
+.contact .phone_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    text-align: center;
+}
+
+.phone_email a {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.phone_email i {
+    margin-right: 5px;
+}
+
+.contact .contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--bgcolor-whiteTxt);
+}
+
+.contact_form h2 {
+    text-shadow: 0 3px 3px rgb(104, 104, 104);
+}
+
+.contact_form form {
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.contact_form input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact_form input[type=text] {
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.contact_form input[type=textarea] {
+    height: 90px;
+    border-radius: 15px;
+}
+
+.contact_form input[type=button] {
+    width: 80%;
+    font-size: 16px;
+}
+
+.contact_form .checkbox_div {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.contact_form .checkbox_div input[type=checkbox] {
+    width: 20%;
+}
+
+/* .contact_form input[type=button] {
+    margin: 0 auto;
+} */
+/* =============================================================== */
+
+
+
+/* ===========================  FOOTER  =========================== */
+footer {
+    flex-basis: 10vh;
+    color: var(--bgcolor-whiteTxt);
+    text-align: center;
+    line-height: 10vh;
+    background-color: var(--bgcolor-darkBlue);
+}
+
+footer p, 
+footer span {
+    font-size: 14px;
+}
+
+footer span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* =============================================================== */
+
