@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    main h2 {
+        font-size: 3.6rem;
+        letter-spacing: 2px;
+    }
+
+
+    /* ===========================  LOGIN  =========================== */
+    .login_box {
+        padding: 50px 100px;
+    }
+
+    main input[type=text],
+    main input[type=password],
+    main input[type=email] {
+        height: 60px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        font-size: 2.2rem;
+    }
+
+    .login_options,
+    .login_options p,
+    .login_options a,
+    .login_options span {
+        font-size: 2rem;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  RESET PASSWORD  =========================== */
+    .resetparagraph {
+        font-size: 2rem;
+    }
+
+    .go_back_href {
+        bottom: 7%;
+        left: 20%;
+    }
+
+    /* =============================================================== */
+}

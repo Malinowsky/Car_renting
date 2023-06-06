@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    .bg_img {
+        height: 300px;
+    }
+
+    .how_works_desc {
+        padding: 40px 70px;
+        margin-bottom: 20px;
+    }
+
+    .how_works_desc p {
+        font-size: 1.8rem;
+    }
+
+    .how_works_orange_wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

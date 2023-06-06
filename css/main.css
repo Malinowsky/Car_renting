@@ -77,7 +77,8 @@ label {
 
 /* ---------------- blue button ---------------- */
 .blue_button,
-input[type=button] {
+input[type=button],
+input[type=submit] {
     padding: 15px 25px;
     border: none;
     border-radius: 20px;
@@ -91,7 +92,8 @@ input[type=button] {
 }
 
 .blue_button:hover,
-input[type=button] {
+input[type=button],
+input[type=submit] {
     background-color: var(--bghover-darkBlue);
 }
 /* --------------------------------------------- */
@@ -149,6 +151,7 @@ input[type=button] {
 
 .img_logo {
     width: 70%;
+    max-width: 380px;
 }
 
 .wrapper {
@@ -362,7 +365,8 @@ section.contact {
     text-align: center;
 }
 
-.contact_form input[type=text] {
+.contact_form input[type=text],
+.contact_form input[type=email] {
     height: 40px;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -373,7 +377,8 @@ section.contact {
     border-radius: 15px;
 }
 
-.contact_form input[type=button] {
+.contact_form input[type=button],
+.contact_form input[type=submit] {
     width: 80%;
     font-size: 16px;
 }
@@ -384,6 +389,10 @@ section.contact {
     margin-bottom: 25px;
 }
 
+.contact_form .checkbox_div p {
+    margin-left: 10px;
+    font-size: 10px;
+}
 
 .contact_form .checkbox_div input[type=checkbox] {
     width: 20%;

@@ -14,6 +14,7 @@
     <!-- phone styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/howworks.css">
+    <link rel="stylesheet" href="css/howworks-tablet.css">
 
     <!-- tablet styles -->
     <link rel="stylesheet" href="css/main-tablet.css">
@@ -71,6 +72,16 @@
                     <h2>Wypełnij formularz online</h2>
                     <p>Zarezerwuj samochód w Panelu Rezerwacji, zadzwoń, napisz e-mail lub skontaktuj się z nami przez media społecznościowe – w zależności od tego, która metoda jest dla Ciebie najwygodniejsza. Złożenie rezerwacji w Qamjie zajmuje najwyżej kilka minut.</p>
                 </div>
+                <div class="how_works_desc">
+                    <i class="fa-sharp fa-regular fa-clock"></i>
+                    <h2>Czekaj na potwierdzenie</h2>
+                    <p>Potwierdzamy rezerwacje i przygotowujemy samochód. Daj nam chwilę – dokładamy wszelkich starań, aby każdy szczegół zachwycał Cię swoją perfekcją przez całą podróż. Powinieneś otrzymać wiadomość e-mail z informacją, że Twoja rezerwacja została zatwierdzona. Zamówiony samochód możesz odebrać bezpośrednio w naszej siedzibie lub spod adresu wskazanego w zamówieniu.</p>
+                </div>
+                <div class="how_works_desc">
+                    <i class="fa-solid fa-road"></i>
+                    <h2>Odbierz auto i ruszaj w drogę</h2>
+                    <p>Wszystko jest gotowe. Wsiadaj i jedź, gdzie chcesz. Delektuj się tym doświadczeniem - jest wyjątkowe. W końcu samochód możesz zwrócić w każdym polskim mieście – wystarczy wcześniej podać adres, a my przyjedziemy po odbiór.</p>
+                </div>
             </div>
             <div class="bg_img">
                 <!-- gackgroung img in CSS -->
@@ -89,13 +100,14 @@
                 <h2>napisz do nas</h2>
                 <form action="#">
                     <label for="user-email">Twoj adres e-mail:</label>
-                    <input id="user-email" type="text">
+                    <input id="user-email" type="email">
                     <label for="user-message">Treść wiadomości:</label>
                     <input id="user-email" type="textarea">
                     <div class="checkbox_div">
-                        <input type="checkbox" name="personal-data" id="personal-data">Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności
+                        <input type="checkbox" name="personal-data" id="personal-data" required>
+                        <p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
                     </div>
-                    <input type="button" value="WYŚLIJ WIADOMOŚĆ">
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
                 </form>
             </div>
         </section>

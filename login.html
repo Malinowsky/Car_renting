@@ -14,9 +14,10 @@
     <!-- phone styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
-
+    
     <!-- tablet styles -->
     <link rel="stylesheet" href="css/main-tablet.css">
+    <link rel="stylesheet" href="css/login-tablet.css">
     
     <!-- favicon -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
@@ -62,10 +63,10 @@
                     <h2>logowanie</h2>
                     <form action="#">
                         <label for="email">wpisz e-mail:</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email">
                         <label for="password">wpisz hasło:</label>
                         <input type="password" name="password" id="password">
-                        <input type="button" value="zaloguj się">
+                        <input type="submit" value="zaloguj się">
                     </form>
                     <div class="login_options">
                         <p>
@@ -90,13 +91,14 @@
                 <h2>napisz do nas</h2>
                 <form action="#">
                     <label for="user-email">Twoj adres e-mail:</label>
-                    <input id="user-email" type="text">
+                    <input id="user-email" type="email">
                     <label for="user-message">Treść wiadomości:</label>
                     <input id="user-email" type="textarea">
                     <div class="checkbox_div">
-                        <input type="checkbox" name="personal-data" id="personal-data">Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności
+                        <input type="checkbox" name="personal-data" id="personal-data" required>
+                        <p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
                     </div>
-                    <input type="button" value="WYŚLIJ WIADOMOŚĆ">
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
                 </form>
             </div>
         </section>

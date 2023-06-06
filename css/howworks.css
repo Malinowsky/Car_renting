@@ -13,8 +13,9 @@
 }
 
 .bg_img:last-of-type {
+    position: relative;
     background-image: url('https://ocdn.eu/pulscms-transforms/1/jrVktkpTURBXy8wZDBkZDZmZWE1YzlkNmM1MTE1OTM2OWY1NTZiOWZmYy5qcGeRlQMAzQNCzSUgzRTj');
-    z-index: 0;
+    z-index: 5;
 }
 
 .how_works_desc {
@@ -22,6 +23,7 @@
     top: 2vh;
     left: 0;
     padding: 30px 40px;
+    margin-bottom: 15px;
     border-radius: 20px;
     background-color: var(--bgcolor-darkBlue);
     text-align: center;
@@ -36,8 +38,10 @@
 
 .how_works_orange_wrapper {
     position: relative;
+    top: -20px;
     width: 100%;
-    padding: 5vh 10px 7vh;
+    padding: 5vh 10px 3vh;
+    box-shadow: 0 20px 1px 10px var(--bgcolor-orange);
     background-color: var(--bgcolor-orange);
     text-align: center;
     z-index: 1;

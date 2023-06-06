@@ -8,11 +8,18 @@ main h2 {
 
 /* ===========================  LOGIN  =========================== */
 .login_box {
+    max-width: 620px;
     background-color: var(--bgcolor-orange);
     padding: 30px 25px;
     margin: 0 25px;
     border: 4px solid rgb(197, 133, 15);
     border-radius: 20px;
+}
+
+@media (min-width: 620px) {
+    .login_box {
+        margin: 0 auto;
+    }
 }
 
 main form {
@@ -28,7 +35,8 @@ main input {
 }
 
 main input[type=text],
-main input[type=password] {
+main input[type=password],
+main input[type=email] {
     width: 100%;
     height: 40px;
     padding-left: 10px;
@@ -38,7 +46,8 @@ main input[type=password] {
     box-shadow: 0 2px 5px 0px black;
 }
 
-main input[type=button] {
+main input[type=button],
+main input[type=submit]  {
     margin: 40px auto;
 }
 

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
     :root {
-        --font-h1-size: 7rem;
+        --font-h1-size: 3.6rem;
         --font-h2-size: 3.4rem;
         --font-p-size: 2.8rem;
         --font-label-size: 2.6rem;
@@ -8,6 +8,10 @@
 
     .img_logo {
         width: 50%;
+    }
+
+    main .company_name {
+        font-size: 7rem;
     }
 
     .blue_button,
@@ -60,4 +64,57 @@
     }
     /* =============================================================== */
 
+
+    /* ===========================  SECTION  =========================== */
+    .contact .phone_email {
+        height: 30%;
+    }
+
+    .contact .contact_form {
+        height: 70%;
+    }
+
+    .contact_form form {
+        width: 70%;
+        padding: 30px 20px;
+    }
+
+    .contact_form input {
+        font-size: 26px;
+    }
+
+    .contact_form input[type=text] {
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .contact_form input[type=textarea] {
+        height: 130px;
+        border-radius: 15px;
+        word-wrap: break-word;
+    }
+
+    .contact_form input[type=button],
+    .contact_form input[type=submit] {
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .contact_form .checkbox_div p {
+        margin-left: -15px;
+        font-size: 16px;
+    }
+
+    .contact_form .checkbox_div input[type=checkbox] {
+        width: 30%;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  FOOTER  =========================== */
+    footer p, 
+    footer span {
+        font-size: 20px;
+    }
+    /* =============================================================== */
 }
