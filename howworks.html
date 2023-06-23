@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia aut sportowych</title>
+
+    <!-- styles -->
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- phone styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/howworks.css">
+    <link rel="stylesheet" href="css/howworks-tablet.css">
+
+    <!-- tablet styles -->
+    <link rel="stylesheet" href="css/main-tablet.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="cars.php">samochody</a></li>
+                <li><a href="about.html">dlaczego my?</a></li>
+                <li><a href="voucher.html">vouchery</a></li>
+                <li><a href="howworks.html">jak to działa?</a></li>
+                <a href="cars.php">zarezerwuj</a>
+                <div class="phone_number_box">
+                    <p>Skontaktuj sie z nami</p>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="header clearfix">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_contacts">
+                <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
+                <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+                <div class="phone_number_boxDisplay">
+                    <div class="phone_number_box">
+                        <p>Skontaktuj sie z nami</p>
+                        <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                        <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="bg_img">
+                <!-- gackgroung img in CSS -->
+            </div>
+            <div class="how_works_desc">
+                <h2>Jak to działa?</h2>
+                <p>Działamy najlepiej jak najlepsze Porsche. Wynajęty samochód dostarczamy pod wskazany adres, a towar zwracamy w jednym z polskich miast (po wcześniejszym ustaleniu adresu). Wychodząc naprzeciw oczekiwaniom naszych klientów maksymalnie uprościliśmy proces użytkowania naszych samochodów. Tylko trzy proste kroki dzielą Cię od prowadzenia wymarzonego samochodu.</p>
+            </div>
+            <div class="how_works_orange_wrapper">
+                <h2>Jak wygląda proces wypożyczenia?</h2>
+                <div class="how_works_desc">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Wypełnij formularz online</h2>
+                    <p>Zarezerwuj samochód w Panelu Rezerwacji, zadzwoń, napisz e-mail lub skontaktuj się z nami przez media społecznościowe – w zależności od tego, która metoda jest dla Ciebie najwygodniejsza. Złożenie rezerwacji w Qamjie zajmuje najwyżej kilka minut.</p>
+                </div>
+                <div class="how_works_desc">
+                    <i class="fa-sharp fa-regular fa-clock"></i>
+                    <h2>Czekaj na potwierdzenie</h2>
+                    <p>Potwierdzamy rezerwacje i przygotowujemy samochód. Daj nam chwilę – dokładamy wszelkich starań, aby każdy szczegół zachwycał Cię swoją perfekcją przez całą podróż. Powinieneś otrzymać wiadomość e-mail z informacją, że Twoja rezerwacja została zatwierdzona. Zamówiony samochód możesz odebrać bezpośrednio w naszej siedzibie lub spod adresu wskazanego w zamówieniu.</p>
+                </div>
+                <div class="how_works_desc">
+                    <i class="fa-solid fa-road"></i>
+                    <h2>Odbierz auto i ruszaj w drogę</h2>
+                    <p>Wszystko jest gotowe. Wsiadaj i jedź, gdzie chcesz. Delektuj się tym doświadczeniem - jest wyjątkowe. W końcu samochód możesz zwrócić w każdym polskim mieście – wystarczy wcześniej podać adres, a my przyjedziemy po odbiór.</p>
+                </div>
+            </div>
+            <div class="bg_img">
+                <!-- gackgroung img in CSS -->
+            </div>
+        </article>
+
+        <section class="contact">
+            <div class="phone_email">
+                <div class="nav_contacts">
+                    <h1 class="company_name">szybka jazda</h1>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h2>napisz do nas</h2>
+                <form action="#">
+                    <label for="user-email">Twoj adres e-mail:</label>
+                    <input id="user-email" type="email">
+                    <label for="user-message">Treść wiadomości:</label>
+                    <input id="user-email" type="textarea">
+                    <div class="checkbox_div">
+                        <input type="checkbox" name="personal-data" id="personal-data" required>
+                        <p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
+                    </div>
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p><span>szybka jazda</span> &copy; 2023 Copyright Szybka Jazda</p>
+        </footer>
+    </div>
+
+    <script src="js/toggle.js"></script>
+</body>
+
+</html>

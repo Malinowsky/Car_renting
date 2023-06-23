@@ -1,0 +1,120 @@
+@media (min-width: 768px) {
+    :root {
+        --font-h1-size: 3.6rem;
+        --font-h2-size: 3.4rem;
+        --font-p-size: 2.8rem;
+        --font-label-size: 2.6rem;
+    }
+
+    .img_logo {
+        width: 50%;
+    }
+
+    main .company_name {
+        font-size: 7rem;
+    }
+
+    .blue_button,
+    input[type=button] {
+        padding: 25px 40px;
+    }
+
+    .phone_number_boxDisplay {
+        width: 60%;
+    }
+
+
+    /* ===========================  NAVBAR  =========================== */
+    nav {
+        width: 60%;
+        padding: 0 10px 40px;
+    }
+
+    nav ul>li>a {
+        padding: 0 40px;
+    }
+
+    nav ul>a {
+        padding: 20px;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  HEADER  =========================== */
+    header button,
+    nav button {
+        font-size: 35px;
+    }
+
+    header .nav_contacts button,
+    header .nav_contacts .link_button {
+        width: 7vh;
+    }
+
+    header .nav_contacts .link_button {
+        font-size: 35px;
+    }
+
+    .nav_contacts {
+        margin-right: 20px;
+    }
+
+    header button:first-of-type {
+        margin-left: 10px;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  SECTION  =========================== */
+    .contact .phone_email {
+        height: 30%;
+    }
+
+    .contact .contact_form {
+        height: 70%;
+    }
+
+    .contact_form form {
+        width: 70%;
+        padding: 30px 20px;
+    }
+
+    .contact_form input {
+        font-size: 26px;
+    }
+
+    .contact_form input[type=text] {
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .contact_form input[type=textarea] {
+        height: 130px;
+        border-radius: 15px;
+        word-wrap: break-word;
+    }
+
+    .contact_form input[type=button],
+    .contact_form input[type=submit] {
+        width: 70%;
+        font-size: 26px;
+    }
+
+    .contact_form .checkbox_div p {
+        margin-left: -15px;
+        font-size: 16px;
+    }
+
+    .contact_form .checkbox_div input[type=checkbox] {
+        width: 30%;
+    }
+    /* =============================================================== */
+
+
+    /* ===========================  FOOTER  =========================== */
+    footer p, 
+    footer span {
+        font-size: 20px;
+    }
+    /* =============================================================== */
+}

@@ -1,0 +1,53 @@
+article {
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 30px auto;
+    text-transform: none;
+}
+
+.car_photo img { 
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.car_info h2 {
+    padding: 10px 0;
+    text-transform: none;
+    text-align: center;
+    color: black;
+}
+
+.car_info {
+    border-radius: 0 0 20px 20px;
+    background-color: var(--bgcolor-orange);
+}
+
+.short_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5px 5px 20px 5px;
+    color: var(--bgcolor-darkBlue);
+}
+
+.short_info_element {
+    display: flex;
+    justify-content: space-around;
+}
+
+.short_info_element i {
+    padding-right: 3px;
+    font-size: var(--font-p-size);
+}
+
+.short_info_element p {
+    font-size: 1.6rem;
+}
