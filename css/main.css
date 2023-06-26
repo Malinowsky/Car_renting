@@ -96,6 +96,17 @@ input[type=button],
 input[type=submit] {
     background-color: var(--bghover-darkBlue);
 }
+
+a.a_button_style {
+    display: block;
+    padding: 10px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bgcolor-whiteTxt);
+    background-color: var(--bgcolor-darkBlue);
+}
 /* --------------------------------------------- */
 
 
@@ -151,7 +162,7 @@ input[type=submit] {
 
 .img_logo {
     width: 70%;
-    max-width: 380px;
+    max-width: 400px;
 }
 
 .wrapper {

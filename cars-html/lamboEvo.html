@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia aut sportowych</title>
+
+    <!-- styles -->
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- phone styles -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cars.css">
+    <link rel="stylesheet" href="../css/car-single.css">
+
+    <!-- tablet styles -->
+    <link rel="stylesheet" href="../css/main-tablet.css">
+    <link rel="stylesheet" href="../css/cars-tablet.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="../index.html">strona główna</a></li>
+                <li><a href="../cars.html">samochody</a></li>
+                <li><a href="../about.html">dlaczego my?</a></li>
+                <li><a href="../voucher.html">vouchery</a></li>
+                <li><a href="../howworks.html">jak to działa?</a></li>
+                <a href="../cars.html">zarezerwuj</a>
+                <div class="phone_number_box">
+                    <p>Skontaktuj sie z nami</p>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="header clearfix">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_contacts">
+                <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
+                <button><a class="link_button" href="../login.html"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+                <div class="phone_number_boxDisplay">
+                    <div class="phone_number_box">
+                        <p>Skontaktuj sie z nami</p>
+                        <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                        <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="car">
+                <div class="car_photo">
+                    <img src="../img/huracan-evo.jpg" alt="Lamborghini Huracan EVO">
+                </div>
+                <div class="car_info">
+                    <h2>Lamborghini Huracan EVO</h2>
+                    <div class="short_info">
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-wrench"></i> <p>680km</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-gauge"></i> <p>2.9s do 100km/h</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-sharp fa-solid fa-gears"></i> <p>automat</p>
+                        </div>
+                    </div>
+                    <div class="go_to_buttons">
+                        <a href="#car_description" class="a_button_style">OPIS SAMOCHODU</a>
+                        <a href="#car_data" class="a_button_style">dane techniczne</a>
+                        <a href="#car_reservation" class="a_button_style">rezerwacja</a>
+                    </div>
+                    <div id="car_description" class="car_description">
+                        <p>Lamborghini przy projektowaniu modelu Huracan Evo skupiło się na dopracowaniu istniejącej konstrukcji. Celem włoskiego producenta było poprawienie parametrów auta, z jednoczesnym uzyskaniem jeszcze większej ilości adrenaliny z jego prowadzenia. Model Huracan bazuje na wersji Performante, dzięki czemu m.in. uzyskuje dodatkowe 30KM i 40Nm względem „zwykłego” Huracana. To oczywiście nie wszystkie zmiany jakie przeszedł ten samochód.</p>
+
+                        <p>Evo to również poprawa aerodynamiki. Wpływają na to m.in. przebudowany zderzak przedni, boczne wloty powietrza oraz tylny pas wraz z modyfikacją wydechu.Wydech również przypomina konstrukcyjnie ten z wersji Performante, dzięki czemu doznania akustyczne w czasie jazdy, które już były na najwyższym poziomie, są jeszcze bardziej ekscytujące. Lamborghini od pewnego czasu nie kojarzy się jednak wyłącznie z niesamowitym przyśpieszeniem, głośnym wydechem czy przykuwającym wzrok designem. Chociaż wszystkie te cechy Huracan’a Evo opisują doskonale, to producent zadbał również o wybitne prowadzenie idące w parze z pozostałymi parametrami. Wpływa na to między innym nowa odsłona centralnej jednostki przetwarzania danych o typowo włoskiej nazwie „Lamborghini Dinamica Veicolo Integrata” – w skrócie LDVI. Jej zadaniem jest prawidłowa integracja wszystkich pokładowych systemów dbających o prowadzenie pojazdu.</p>
+                            
+                        <p>W Lamborghini Huracan Evo udoskonalono również napęd i przekierowywanie momentu obrotowego na poszczególne koła. O odpowiednie zatrzymywanie auta z dużych prędkości (Evo rozpędza się do 325km/h) zadbają z kolei karbonowo-ceramiczne hamulce. Do dyspozycji kierowcy jest automatyczna skrzynia biegów i trzy tryby jazdy – Strada, Sport i Corsa. Jazdę naszym egzemplarzem ułatwi opcjonalne unoszenie przedniej osi.</p>
+                            
+                        <p>Zmiany dotknęły również wnętrza pojazdu, które zostało unowocześnione, zachowując jednak nastrój typowy dla pojazdów włoskiej marki. Pierwszą i najważniejszą zmianę, jaką przeszło wnętrze Lamborghini dostrzegamy patrząc na konsolę środkową. Znajdziemy tam obecnie 8,4 calowy ekran dotykowy, który można obsługiwać także przyciskami na kierownicy, gestami lub głosowo.</p>
+                            
+                        
+                        <p>Nasza wypożyczalnia samochodów oferuje egzemplarz w niebieskim lakierze „Blu Mehit” w połączeniu z kontrastującymi żółtymi zaciskami (elementy żółtego koloru „Giallo Taurus” znajdziemy również w środku pojazdu) i czarnymi felgami, który z pewnością wyróżni się w każdym miejscu. Lamborghini Huracan Evo to udoskonalona postać świetnego już samochodu. Łączy wszystkie cechy supersamochodu – jest głośne, bardzo szybkie, krzykliwe i bardzo precyzyjne w prowadzeniu. Wyróżnia się również na tle konkurencji pod względem silnika, pozostając wiernym klasycznej, wolnossącej jednostce V10 bez turbodoładowania. Wszystko to sprawia, że Huracan to wyjątkowy i unikalny samochód. Wynajem Lamborghini Huracan Evo z pewnością dostarczy każdemu wielu niezapomnianych wrażeń.</p>
+                    </div>
+                    <div id="car_data" class="car_data">
+                        <span class="car_data_boxes">
+                            <p>Moc</p>
+                            <p>680KM</p>
+                        </span>
+                        <span class="car_data_boxes">
+                            <p>0-100</p>
+                            <p>2.9s</p>
+                        </span>
+                        <span class="car_data_boxes">
+                            <p>Skrzynia</p>
+                            <p>Automatyczna</p>
+                        </span>
+                        <span class="car_data_boxes">
+                            <p>Napęd</p>
+                            <p>4x4</p>
+                        </span>
+                        <span class="car_data_boxes">
+                            <p>Silnik</p>
+                            <p>5.2L v10</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="contact">
+            <div class="phone_email">
+                <div class="nav_contacts">
+                    <h1 class="company_name">szybka jazda</h1>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h2>napisz do nas</h2>
+                <form action="#">
+                    <label for="user-email">Twoj adres e-mail:</label>
+                    <input id="user-email" type="email">
+                    <label for="user-message">Treść wiadomości:</label>
+                    <input id="user-email" type="textarea">
+                    <div class="checkbox_div">
+                        <input type="checkbox" name="personal-data" id="personal-data" required><p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
+                    </div>
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p><span>szybka jazda</span> &copy; 2023 Copyright Szybka Jazda</p>
+        </footer>
+    </div>
+
+    <script src="../js/toggle.js"></script>
+</body>
+
+</html>
