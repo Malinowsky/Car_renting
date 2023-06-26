@@ -3,9 +3,10 @@
         height: 300px;
     }
 
-    .how_works_desc {
+    .how_works_orange_wrapper .how_works_desc {
+        max-width: 700px;
         padding: 40px 70px;
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
     }
 
     .how_works_desc p {
@@ -15,5 +16,19 @@
     .how_works_orange_wrapper {
         padding-left: 60px;
         padding-right: 60px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .how_works_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .how_works_orange_wrapper .how_works_desc {
+        max-width: 550px;
     }
 }

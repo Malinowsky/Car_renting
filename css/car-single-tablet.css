@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+    .car {
+        flex-basis: 650px;
+    }
+
+    .short_info_element {
+        padding-left: 170px;
+        padding-right: 170px;
+        line-height: 40px;
+    }
+
+    .short_info_element i {
+        font-size: 32px;
+    }
+
+    .short_info_element p {
+        font-size: 2.2rem;
+    }
+
+    .short_info_element:last-child {
+        margin-bottom: 20px;
+    }
+
+    .car_info h2 {
+        padding: 20px 0;
+    }
+
+    .car_description p {
+        padding: 20px 70px;
+    }
+
+    .car_data {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .car_data span {
+        flex-basis: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

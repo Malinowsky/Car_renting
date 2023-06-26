@@ -37,8 +37,9 @@ a.a_button_style {
     font-weight: 700;
 }
 
-@media (min-width: 768px) {
-    .car {
-        width: 600px;
-    }
+.short_info_element {
+    justify-content: space-between;
+
+    padding-left: 60px;
+    padding-right: 60px;
 }

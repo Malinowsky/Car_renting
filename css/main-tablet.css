@@ -7,7 +7,7 @@
     }
 
     .img_logo {
-        width: 50%;
+        height: 40%;
     }
 
     main .company_name {
@@ -64,19 +64,24 @@
     }
     /* =============================================================== */
 
+    main .main_buttons {
+        margin-top: 50px;
+    }
+
 
     /* ===========================  SECTION  =========================== */
     .contact .phone_email {
-        height: 30%;
+        height: 25%;
     }
 
     .contact .contact_form {
-        height: 70%;
+        height: 75%;
     }
 
     .contact_form form {
         width: 70%;
-        padding: 30px 20px;
+        max-width: 700px;
+        padding: 30px 20px 10px;
     }
 
     .contact_form input {
@@ -89,7 +94,7 @@
     }
     
     .contact_form input[type=textarea] {
-        height: 130px;
+        height: 110px;
         border-radius: 15px;
         word-wrap: break-word;
     }

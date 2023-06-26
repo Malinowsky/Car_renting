@@ -15,7 +15,7 @@
     --font-h1-size: 2.6rem;
     --font-h2-size: 2.4rem;
     --font-p-size: 1.8rem;
-    --font-label-size: 1.6rem;
+    --font-label-size: 1.4rem;
 
     --bgcolor-whiteTxt: #F5F5F5;
     --bgcolor-darkBlue: #120C56;
@@ -170,7 +170,6 @@ a.a_button_style {
     flex-direction: column;
     flex-grow: 1;
     min-height: 100vh;
-    max-width: 1280px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.4);
 }

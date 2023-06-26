@@ -1,5 +1,33 @@
 @media (min-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .car {
-        width: 560px;
+        flex-basis: 430px;
+    }
+
+    .country_tilter_wrap {
+        justify-content: space-around;
+
+        font-size: 2.2rem;
+    }
+
+    .sort_by {
+        height: 40px;
+        width: 200px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .car {
+        flex-basis: 420px;
     }
 }

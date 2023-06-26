@@ -53,7 +53,7 @@ article {
 }
 
 .short_info_elemet_down {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .short_info_elemet_down button {
@@ -70,7 +70,7 @@ article {
     font-size: 1.6rem;
 }
 
-.filter_form {
+header+form {
     position: relative;
     top: 8vh;
     padding: 30px 50px;
@@ -91,16 +91,17 @@ article {
     margin-right: 10px;
 }
 
-.filter_form h2 {
+header+form h2 {
     text-align: center;
 }
 
-.filter_form input[type=submit], .sort_by {
+header+form input[type=submit], .sort_by {
     display: block;
     margin: 20px auto 0;
 }
 
 .sort_by {
+    height: 30px;
     margin-top: 10px;
 }
 

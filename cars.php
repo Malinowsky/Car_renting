@@ -33,7 +33,7 @@
                 <li><a href="about.html">dlaczego my?</a></li>
                 <li><a href="voucher.html">vouchery</a></li>
                 <li><a href="howworks.html">jak to działa?</a></li>
-                <a href="cars.html">zarezerwuj</a>
+                <a href="cars.php">zarezerwuj</a>
                 <div class="phone_number_box">
                     <p>Skontaktuj sie z nami</p>
                     <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
@@ -60,7 +60,7 @@
             </div>
         </header>
 
-        <form class="filter_form" action="cars.php" method="get" id="filterForm">
+        <form action="cars.php" method="get" id="filterForm">
             <h2>Filtruj według kraju pochodzenia:</h2>
             <div class="country_tilter_wrap">
                 <div class="country_tilter_1col">
