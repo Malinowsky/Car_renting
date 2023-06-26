@@ -1,4 +1,5 @@
 article {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 8vh;
@@ -34,17 +35,30 @@ article {
 
 .short_info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 5px 5px 20px 5px;
-    color: var(--bgcolor-darkBlue);
+    flex-direction: column;
 }
 
 .short_info_element {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.short_info_elemet_up, .short_info_elemet_down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5px 5px 10px 5px;
+}
+
+.short_info_elemet_down {
+    margin-bottom: 5px;
+}
+
+.short_info_elemet_down button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
 }
 
 .short_info_element i {
@@ -55,3 +69,38 @@ article {
 .short_info_element p {
     font-size: 1.6rem;
 }
+
+.filter_form {
+    position: relative;
+    top: 8vh;
+    padding: 30px 50px;
+    color: var(--bgcolor-whiteTxt);
+}
+
+.country_tilter_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.country_tilter_wrap input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.filter_form h2 {
+    text-align: center;
+}
+
+.filter_form input[type=submit], .sort_by {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.sort_by {
+    margin-top: 10px;
+}
+
