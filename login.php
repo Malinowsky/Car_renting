@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/main-tablet.css">
     <link rel="stylesheet" href="css/login-tablet.css">
     
+    <!-- PC styles -->
+    <link rel="stylesheet" href="css/main-pc.css">
+    
     <!-- favicon -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 </head>

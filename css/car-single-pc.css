@@ -1,0 +1,24 @@
+@media (min-width: 1366px) {
+    .car {
+        flex-basis: 900px;
+    }
+
+    .go_to_buttons,
+    .car_description {
+        border-top: 2px solid var(--bghover-orange);
+    }
+
+    a.a_button_style {
+        margin: 20px auto;
+    }
+
+    .short_info_element {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .car_data {
+        width: 60%;
+        margin: 30px auto;
+    }
+}

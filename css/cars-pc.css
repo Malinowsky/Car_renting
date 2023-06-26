@@ -1,0 +1,47 @@
+@media (min-width: 1366px) {
+    article {
+        padding-top: 12vh;
+        padding-bottom: 7vh;
+    }
+
+    h2 {
+        font-size: var(--font-h2-size);
+    }
+
+    .country_tilter_wrap {
+        font-size: 3.2rem;
+    }
+
+    .sort_by {
+        height: 60px;
+        width: 230px;
+        font-size: 2.2rem;
+    }
+
+    .country_tilter_wrap {
+        max-width: 500px;
+        margin: 10px auto 30px;
+        font-size: 3.2rem;
+    }
+
+    header+form {
+        top: 12vh;
+    }
+
+    .car {
+        flex-basis: 550px;
+    }
+
+    .short_info_element p {
+        font-size: 2.2rem;
+    }
+
+    .short_info_element i {
+        padding-right: 10px;
+    }
+
+    .short_info_elemet_down button {
+        padding: 15px 25px;
+        font-size: 1.8rem;
+    }
+}

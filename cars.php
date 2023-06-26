@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/main-tablet.css">
     <link rel="stylesheet" href="css/cars-tablet.css">
 
+    <!-- PC styles -->
+    <link rel="stylesheet" href="css/main-pc.css">
+    <link rel="stylesheet" href="css/cars-pc.css">
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 </head>

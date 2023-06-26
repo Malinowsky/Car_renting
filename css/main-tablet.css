@@ -42,17 +42,14 @@
 
     /* ===========================  HEADER  =========================== */
     header button,
-    nav button {
+    nav button,
+    header .nav_contacts .link_button  {
         font-size: 35px;
     }
 
     header .nav_contacts button,
     header .nav_contacts .link_button {
         width: 7vh;
-    }
-
-    header .nav_contacts .link_button {
-        font-size: 35px;
     }
 
     .nav_contacts {

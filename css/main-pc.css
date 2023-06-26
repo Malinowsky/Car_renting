@@ -1,0 +1,54 @@
+@media (min-width: 1360px) {
+    :root {
+        --font-h1-size: 4.6rem;
+        --font-h2-size: 4rem;
+        --font-p-size: 3rem;
+        --font-label-size: 2.6rem;
+    }
+
+    .blue_button,
+    input[type=button],
+    input[type=submit] {
+        padding: 25px 55px;
+    }
+
+    a.a_button_style {
+        padding: 15px;
+        margin: 20px 30px;
+    }
+
+    main .company_name {
+        font-size: 9rem;
+    }
+
+    .blue_button,
+    input[type=button] {
+        padding: 35px 45px;
+    }
+
+    .phone_number_boxDisplay {
+        width: 40%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    header button,
+    nav button,
+    header .nav_contacts .link_button {
+        height: 12vh;
+        width: 12vh;
+        font-size: 55px;
+    }
+
+    header .nav_contacts button {
+        width: 10vh;
+    }
+
+    .header {
+        height: 12vh;
+    }
+
+    .navbar {
+        width: 50%;
+    }
+}

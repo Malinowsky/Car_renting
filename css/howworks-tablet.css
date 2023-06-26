@@ -18,17 +18,3 @@
         padding-right: 60px;
     }
 }
-
-@media (min-width: 1366px) {
-    .how_works_wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        justify-content: space-around;
-    }
-
-    .how_works_orange_wrapper .how_works_desc {
-        max-width: 550px;
-    }
-}
