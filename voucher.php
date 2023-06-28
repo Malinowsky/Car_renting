@@ -13,15 +13,19 @@
 
     <!-- phone styles -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/howworks.css">
+    <link rel="stylesheet" href="css/voucher.css">
     
     <!-- tablet styles -->
     <link rel="stylesheet" href="css/main-tablet.css">
-    <link rel="stylesheet" href="css/login-tablet.css">
-    
+    <link rel="stylesheet" href="css/howworks-tablet.css">
+    <link rel="stylesheet" href="css/voucher-tablet.css">
+
     <!-- PC styles -->
     <link rel="stylesheet" href="css/main-pc.css">
-    
+    <link rel="stylesheet" href="css/howworks-pc.css">
+    <link rel="stylesheet" href="css/voucher-pc.css">
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 </head>
@@ -78,70 +82,35 @@
         <!-- --------------------------------------- -->
 
 
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
-            // Pobierz dane z formularza
-            $email = $_POST["email"];
-            $password = $_POST["password"];
-
-            // Połącz z bazą danych
-            $db = new SQLite3("inzynieria.db");
-
-            // Zabezpiecz dane przed wstrzykiwaniem SQL
-            $email = $db->escapeString($email);
-
-            // Sprawdź dane logowania w bazie danych
-            $query = "SELECT * FROM users WHERE email='$email'";
-            $result = $db->query($query);
-
-            // Sprawdź, czy użytkownik istnieje i hasło się zgadza
-            if ($row = $result->fetchArray()) {
-                $storedPasswordHash = $row["password_hash"];
-                if (password_verify($password, $storedPasswordHash)) {
-                    // Pomyślne uwierzytelnienie - możesz wykonać dalsze operacje, np. przekierowanie na inną stronę
-                    echo "Logowanie pomyślne!";
-                    // Przekieruj na inną stronę
-                    session_start();
-                    $_SESSION['logged_in'] = true;
-                    $_SESSION['user_id'] = $row['user_id']; // Jeśli masz identyfikator użytkownika w tabeli, to możesz go też zapisać w sesji
-
-                    exit(); // Zakończ skrypt po przekierowaniu
-                } else {
-                    // Nieprawidłowe hasło
-                    echo "Nieprawidłowe hasło!";
-                }
-            } else {
-                // Użytkownik nie istnieje
-                echo "Użytkownik nie istnieje!";
-            }
-
-            // Zamknij połączenie z bazą danych
-            $db->close();
-        }
-        ?>
-
-        <main>
-            <div class="main_wrap">
-                <div class="login_box">
-                    <h2>logowanie</h2>
-                    <form method="POST" action="#">
-                        <label for="email">wpisz e-mail:</label>
-                        <input type="email" name="email" id="email">
-                        <label for="password">wpisz hasło:</label>
-                        <input type="password" name="password" id="password">
-                        <input type="submit" value="zaloguj się">
-                    </form>
-                    <div class="login_options">
-                        <p>
-                            <a href="resetpass.html">Zapomniałeś(aś) hasła?</a>
-                        </p>
-                        <span>albo</span>
-                        <p>Nie posiadasz konta? <a href="registeraccount.php">ZAREJESTRUJ SIĘ</a></p>
+        <article>
+            <div class="bg_img">
+                <!-- background img in CSS -->
+            </div>
+            <div class="how_works_desc">
+                <h2>Idealny kupon podarunkowy</h2>
+                <p>Jeśli szukasz pomysłu na prezent dla miłośnika motoryzacji i chcesz, aby obdarowana osoba zapamiętała go na długo - nasz voucher upominkowy będzie idealnym wyborem. Oferowane przez nas vouchery obejmują indywidualnie dopasowane usługi na dowolną kwotę - możesz więc wybrać rozwiązanie, które w pełni odpowiada Twoim potrzebom i preferencjom obdarowanej osoby. </p>
+                <p> Można je kupić od ręki, bez wychodzenia z domu - wszystkie niezbędne formalności związane z zakupem można załatwić online. Jesteśmy pewni, że każdy fan motoryzacji będzie zachwycony takim prezentem - czy może być coś lepszego niż wypożyczenie samochodu marzeń? </p>
+            </div>
+            <div class="voucher_wrapper">
+                <div class="voucher">
+                    <h2>bon na samochód</h2>
+                    <div class="voucher_amount">
+                        <h2>Bon 300 zł</h2>
+                        <input type="submit" value="KUP">
+                    </div>
+                </div>
+                <div class="voucher">
+                    <h2>bon na samochód</h2>
+                    <div class="voucher_amount">
+                        <h2>Bon 300 zł</h2>
+                        <input type="submit" value="KUP">
                     </div>
                 </div>
             </div>
-        </main>
-
+            <div class="bg_img">
+                <!-- background img in CSS -->
+            </div>
+        </article>
 
         <section class="contact">
             <div class="phone_email">

@@ -1,9 +1,13 @@
-@media (min-width: 1360px) {
+@media (min-width: 1280px) {
     :root {
         --font-h1-size: 4.6rem;
         --font-h2-size: 4rem;
-        --font-p-size: 3rem;
-        --font-label-size: 2.6rem;
+        --font-p-size: 2.4rem;
+        --font-label-size: 2.2rem;
+    }
+
+    header.header_pc {
+        display: none;
     }
 
     .blue_button,
@@ -50,5 +54,64 @@
 
     .navbar {
         width: 50%;
+    }
+}
+
+/* ======================================== */
+
+@media (min-width: 1440px) {
+    :root {
+        --font-h1-size: 5rem;
+        --font-h2-size: 4rem;
+        --font-p-size: 2.2rem;
+        --font-label-size: 2.3rem;
+    }
+
+    header.header {
+        display: none;
+    }
+
+    header.header_pc {
+        display: flex;
+        justify-content: space-around;
+        height: 10vh;
+    }
+
+    .nav_menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul {
+        display: flex;
+        padding-left: 8vw;
+    }
+
+    ul>li>a {
+        display: block;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-transform: uppercase;
+        font-size: var(--font-p-size);
+        font-weight: 700;
+        color: var(--bgcolor-orange);
+        line-height: 10vh;
+    }
+
+    ul>li:hover {
+        background-color: var(--bghover-darkBlue);
+    }
+
+    header button {
+        height: 10vh;
+    }
+
+    header button:hover {
+        background-color: var(--bghover-darkBlue);
+    }
+
+    header button a {
+        font-size: 40px;
     }
 }

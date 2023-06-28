@@ -29,13 +29,14 @@
 
 <body>
     <div class="wrapper">
+        <!-- Mobile/Tablet version header -->
         <nav class="navbar">
             <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
             <ul>
                 <li><a href="index.html">strona główna</a></li>
                 <li><a href="cars.php">samochody</a></li>
                 <li><a href="about.html">dlaczego my?</a></li>
-                <li><a href="voucher.html">vouchery</a></li>
+                <li><a href="voucher.php">vouchery</a></li>
                 <li><a href="howworks.html">jak to działa?</a></li>
                 <a href="cars.php">zarezerwuj</a>
                 <div class="phone_number_box">
@@ -57,12 +58,25 @@
                         <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
                         <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
                     </div>
-
-
                 </div>
-
             </div>
         </header>
+        <!-- -------------------------------------------- -->
+
+        <!-- PC version header -->
+        <header class="header_pc clearfix">
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="index.html">strona główna</a></li>
+                    <li><a href="cars.php">samochody</a></li>
+                    <li><a href="about.html">dlaczego my?</a></li>
+                    <li><a href="voucher.php">vouchery</a></li>
+                    <li><a href="howworks.html">jak to działa?</a></li>
+                </ul>
+            </div>
+            <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+        </header>
+        <!-- --------------------------------------- -->
 
         <form action="cars.php" method="get" id="filterForm">
             <h2>Filtruj według kraju pochodzenia:</h2>

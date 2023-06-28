@@ -175,7 +175,7 @@ a.a_button_style {
 }
 
 
-/* ===========================  HEADER  =========================== */
+/* ===========================  NAVBAR  =========================== */
 .navbar {
     display: none;
 }
@@ -217,20 +217,6 @@ nav ul>a {
     background-color: var(--bgcolor-darkBlue);
 }
 
-/* nav ul>li:nth-last-of-type(1)::after {
-    display: block;
-    content: "";
-    margin-top: 10px;
-    border-top: 1px dashed black;
-}
-
-nav ul>.phone_number_box::before {
-    display: block;
-    content: "";
-    margin-bottom: 10px;
-    border-top: 1px dashed black; 
-}*/
-
 nav ul>li>a:hover {
     background-color: var(--bghover-orange);
 }
@@ -247,6 +233,10 @@ nav button i {
 
 
 /* ===========================  HEADER  =========================== */
+header.header_pc {
+    display: none;
+}
+
 header {
     position: fixed;
     top: 0;

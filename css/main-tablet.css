@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
     :root {
         --font-h1-size: 3.6rem;
-        --font-h2-size: 3.4rem;
-        --font-p-size: 2.8rem;
-        --font-label-size: 2.6rem;
+        --font-h2-size: 3.2rem;
+        --font-p-size: 2.4rem;
+        --font-label-size: 2.2rem;
     }
 
     .img_logo {

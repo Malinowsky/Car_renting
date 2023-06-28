@@ -30,13 +30,14 @@
 
 <body>
     <div class="wrapper">
+        <!-- Mobile/Tablet version header -->
         <nav class="navbar">
             <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
             <ul>
                 <li><a href="index.html">strona główna</a></li>
                 <li><a href="cars.php">samochody</a></li>
                 <li><a href="about.html">dlaczego my?</a></li>
-                <li><a href="voucher.html">vouchery</a></li>
+                <li><a href="voucher.php">vouchery</a></li>
                 <li><a href="howworks.html">jak to działa?</a></li>
                 <a href="cars.php">zarezerwuj</a>
                 <div class="phone_number_box">
@@ -51,7 +52,7 @@
             <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
             <div class="nav_contacts">
                 <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
-                <button><a class="link_button" href="index.html"><i class="fa-solid fa-house"></i></a></button>
+                <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
                 <div class="phone_number_boxDisplay">
                     <div class="phone_number_box">
                         <p>Skontaktuj sie z nami</p>
@@ -61,9 +62,22 @@
                 </div>
             </div>
         </header>
+        <!-- -------------------------------------------- -->
 
-
-
+        <!-- PC version header -->
+        <header class="header_pc clearfix">
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="index.html">strona główna</a></li>
+                    <li><a href="cars.php">samochody</a></li>
+                    <li><a href="about.html">dlaczego my?</a></li>
+                    <li><a href="voucher.php">vouchery</a></li>
+                    <li><a href="howworks.html">jak to działa?</a></li>
+                </ul>
+            </div>
+            <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+        </header>
+        <!-- --------------------------------------- -->
 
         <main>
             <div class="main_wrap">
