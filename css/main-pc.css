@@ -55,6 +55,10 @@
     .navbar {
         width: 50%;
     }
+
+    main .main_buttons {
+        margin-top: 20px;
+    }
 }
 
 /* ======================================== */

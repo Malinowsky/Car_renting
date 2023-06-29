@@ -89,11 +89,12 @@ input[type=submit] {
     font-size: var(--font-p-size);
     color: var(--bgcolor-whiteTxt);
     transition: .3s;
+    cursor: pointer;
 }
 
 .blue_button:hover,
-input[type=button],
-input[type=submit] {
+input[type=button]:hover,
+input[type=submit]:hover {
     background-color: var(--bghover-darkBlue);
 }
 
@@ -106,6 +107,10 @@ a.a_button_style {
     text-transform: uppercase;
     color: var(--bgcolor-whiteTxt);
     background-color: var(--bgcolor-darkBlue);
+}
+
+button {
+    cursor: pointer;
 }
 /* --------------------------------------------- */
 

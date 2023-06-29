@@ -1,6 +1,6 @@
 @media (min-width: 1366px) {
     article {
-        padding-top: 12vh;
+        margin-top: 12vh;
         padding-bottom: 7vh;
     }
 
@@ -43,5 +43,10 @@
     .short_info_elemet_down button {
         padding: 15px 25px;
         font-size: 1.8rem;
+    }
+
+    .country_tilter_wrap input[type=checkbox] {
+        height: 30px;
+        width: 30px;
     }
 }
