@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia aut sportowych</title>
+
+    <!-- styles -->
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- phone styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cars.css">
+
+    <!-- tablet styles -->
+    <link rel="stylesheet" href="css/main-tablet.css">
+    <link rel="stylesheet" href="css/cars-tablet.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="cars.php">samochody</a></li>
+                <li><a href="about.html">dlaczego my?</a></li>
+                <li><a href="voucher.html">vouchery</a></li>
+                <li><a href="howworks.html">jak to działa?</a></li>
+                <a href="cars.php">zarezerwuj</a>
+                <div class="phone_number_box">
+                    <p>Skontaktuj sie z nami</p>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="header clearfix">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_contacts">
+                <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
+                <button><a class="link_button" href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+                <div class="phone_number_boxDisplay">
+                    <div class="phone_number_box">
+                        <p>Skontaktuj sie z nami</p>
+                        <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                        <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="car">
+                <div class="car_photo">
+                    <a href="cars-html/lamboEvo.html"><img src="img/huracan-evo.jpg" alt="Lamborghini Huracan EVO"></a>
+                </div>
+                <div class="car_info">
+                    <h2>Lamborghini Huracan EVO</h2>
+                    <div class="short_info">
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-wrench"></i> <p>680km</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-gauge"></i> <p>2.9s do 100km/h</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-sharp fa-solid fa-gears"></i> <p>automat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_photo">
+                    <img src="img/mclaren-570gt.jpg" alt="Lamborghini Huracan EVO">
+                </div>
+                <div class="car_info">
+                    <h2>McLaren 570GT</h2>
+                    <div class="short_info">
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-wrench"></i> <p>680km</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-gauge"></i> <p>2.9s do 100km/h</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-sharp fa-solid fa-gears"></i> <p>automat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_photo">
+                    <img src="img/porshe-911gt3.jpg" alt="Lamborghini Huracan EVO">
+                </div>
+                <div class="car_info">
+                    <h2>Porsche 911 GT3</h2>
+                    <div class="short_info">
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-wrench"></i> <p>680km</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-gauge"></i> <p>2.9s do 100km/h</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-sharp fa-solid fa-gears"></i> <p>automat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_photo">
+                    <img src="img/audi-r8.jpg" alt="Lamborghini Huracan EVO">
+                </div>
+                <div class="car_info">
+                    <h2>Audi A8 Performance</h2>
+                    <div class="short_info">
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-wrench"></i> <p>680km</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-solid fa-gauge"></i> <p>2.9s do 100km/h</p>
+                        </div>
+                        <div class="short_info_element">
+                            <i class="fa-sharp fa-solid fa-gears"></i> <p>automat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="contact">
+            <div class="phone_email">
+                <div class="nav_contacts">
+                    <h1 class="company_name">szybka jazda</h1>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h2>napisz do nas</h2>
+                <form action="#">
+                    <label for="user-email">Twoj adres e-mail:</label>
+                    <input id="user-email" type="email">
+                    <label for="user-message">Treść wiadomości:</label>
+                    <input id="user-email" type="textarea">
+                    <div class="checkbox_div">
+                        <input type="checkbox" name="personal-data" id="personal-data" required><p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
+                    </div>
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p><span>szybka jazda</span> &copy; 2023 Copyright Szybka Jazda</p>
+        </footer>
+    </div>
+
+    <script src="js/toggle.js"></script>
+</body>
+
+</html>

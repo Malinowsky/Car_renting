@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia aut sportowych</title>
+
+    <!-- styles -->
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+
+    <!-- phone styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/howworks.css">
+    <link rel="stylesheet" href="css/voucher.css">
+    
+    <!-- tablet styles -->
+    <link rel="stylesheet" href="css/main-tablet.css">
+    <link rel="stylesheet" href="css/howworks-tablet.css">
+    <link rel="stylesheet" href="css/voucher-tablet.css">
+
+    <!-- PC styles -->
+    <link rel="stylesheet" href="css/main-pc.css">
+    <link rel="stylesheet" href="css/howworks-pc.css">
+    <link rel="stylesheet" href="css/voucher-pc.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Mobile/Tablet version header -->
+        <nav class="navbar">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="cars.php">samochody</a></li>
+                <li><a href="about.html">dlaczego my?</a></li>
+                <li><a href="voucher.php">vouchery</a></li>
+                <li><a href="howworks.html">jak to działa?</a></li>
+                <a href="cars.php">zarezerwuj</a>
+                <div class="phone_number_box">
+                    <p>Skontaktuj sie z nami</p>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="header clearfix">
+            <button onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_contacts">
+                <button onclick="toggleContact()"><i class="fa-solid fa-phone-volume"></i></button>
+                <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+                <div class="phone_number_boxDisplay">
+                    <div class="phone_number_box">
+                        <p>Skontaktuj sie z nami</p>
+                        <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                        <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- -------------------------------------------- -->
+
+        <!-- PC version header -->
+        <header class="header_pc clearfix">
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="index.html">strona główna</a></li>
+                    <li><a href="cars.php">samochody</a></li>
+                    <li><a href="about.html">dlaczego my?</a></li>
+                    <li><a href="voucher.php">vouchery</a></li>
+                    <li><a href="howworks.html">jak to działa?</a></li>
+                </ul>
+            </div>
+            <button><a class="link_button" href="login.php"><i class="fa-solid fa-right-to-bracket"></i></a></button>
+        </header>
+        <!-- --------------------------------------- -->
+
+
+        <article>
+            <div class="bg_img">
+                <!-- background img in CSS -->
+            </div>
+            <div class="how_works_desc">
+                <h2>Dlaczego powinieneś wybrać nas?</h2>
+                <p>Witaj na naszej stronie, gdzie pasja motoryzacji spotyka się z niezrównanym doświadczeniem wypożyczalni samochodów sportowych. Jesteśmy przekonani, że istnieje wiele powodów, dla których warto wybrać właśnie naszą firmę. Pozwól nam przedstawić Ci kilka z nich.</p>
+                <p> Bogata flota samochodów: Nasza wypożyczalnia oferuje szeroki wybór najnowszych i najbardziej pożądanych modeli sportowych samochodów na rynku. Bez względu na to, czy marzysz o dynamicznym roadsterze, eleganckim coupe czy potężnym supersamochodzie, mamy pojazd idealny dla Ciebie. Zadbaliśmy o to, aby nasza flota była zawsze w doskonałym stanie technicznym i estetycznym, gwarantując niezapomniane wrażenia z jazdy. </p>
+                <p>Profesjonalna obsługa: Nasz zespół składa się z pasjonatów motoryzacji, którzy nie tylko doskonale znają się na samochodach sportowych, ale także są gotowi służyć Ci fachowym doradztwem. Chętnie podzielimy się swoją wiedzą i doświadczeniem, pomagając Ci wybrać idealny samochód, który spełni wszystkie Twoje oczekiwania. Dzięki naszej elastyczności i zaangażowaniu, dostosujemy się do Twoich indywidualnych potrzeb, zapewniając Ci nie tylko samochód marzeń, ale także wyjątkowe doświadczenie.</p>
+                <p>Konkurencyjne ceny i atrakcyjne warunki: Jesteśmy przekonani, że jazda sportowym samochodem powinna być dostępna dla wszystkich miłośników motoryzacji. Dlatego oferujemy konkurencyjne ceny wypożyczenia, umożliwiając Ci spełnienie marzeń bez przekraczania budżetu. Dodatkowo, zapewniamy przejrzyste i uczciwe warunki najmu, bez ukrytych opłat i nieprzyjemnych niespodzianek. Naszym celem jest, aby Twoje doświadczenie z naszą wypożyczalnią było wyjątkowo satysfakcjonujące na każdym etapie.</p>
+                <p>Bezkompromisowa jakość i bezpieczeństwo: Dbamy o to, aby nasze samochody sportowe były w pełni sprawne, regularnie serwisowane i przeszły dokładne kontrole przed każdym wypożyczeniem. Twoje bezpieczeństwo jest dla nas najważniejsze, dlatego gwarantujemy, że nasze pojazdy są w doskonałym stanie technicznym i spełniają najwyższe standardy bezpieczeństwa. Możesz być pewien, że podróżujesz luksusowym samochodem, który zapewnia nie tylko niezapomniane emocje, ale także pewność i spokój podczas jazdy.</p>
+                <p>Wyjątkowe doświadczenie: Nasza wypożyczalnia sportowych samochodów to nie tylko miejsce, gdzie możesz wynająć wymarzony pojazd. To również możliwość zanurzenia się w świat motoryzacji i poczucie bycia częścią czegoś wyjątkowego. Organizujemy różnego rodzaju wydarzenia tematyczne, spotkania dla pasjonatów, a także oferujemy dodatkowe usługi, takie jak wynajem samochodów na wyjątkowe okazje, takie jak śluby, imprezy firmowe czy sesje zdjęciowe.</p>
+                <p>Dlatego, jeśli marzysz o unikalnym doświadczeniu jazdy sportowym samochodem, niezależnie od okazji, warto wybrać naszą wypożyczalnię. Zapewniamy najwyższą jakość, profesjonalizm i niezapomniane emocje, które będą towarzyszyć Ci przez całą drogę. Daj nam szansę spełnić Twoje marzenia motoryzacyjne i dołącz do grona zadowolonych klientów, którzy już przekonali się, dlaczego właśnie my jesteśmy najlepszym wyborem!</p>
+            </div>
+            <div class="bg_img">
+                <!-- background img in CSS -->
+            </div>
+        </article>
+
+        <section class="contact">
+            <div class="phone_email">
+                <div class="nav_contacts">
+                    <h1 class="company_name">szybka jazda</h1>
+                    <a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>+48 000 000 000</a>
+                    <a href="mailto: szybka@jazda.pl"><i class="fa-solid fa-paper-plane"></i>szybka@jazda.pl</a>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h2>napisz do nas</h2>
+                <form action="#">
+                    <label for="user-email">Twoj adres e-mail:</label>
+                    <input id="user-email" type="email">
+                    <label for="user-message">Treść wiadomości:</label>
+                    <input id="user-email" type="textarea">
+                    <div class="checkbox_div">
+                        <input type="checkbox" name="personal-data" id="personal-data" required>
+                        <p>Zgadzam się na wykorzystanie danych osobowych zgodnie z Polityką Prywatności</p>
+                    </div>
+                    <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p><span>szybka jazda</span> &copy; 2023 Copyright Szybka Jazda</p>
+        </footer>
+    </div>
+
+    <script src="js/toggle.js"></script>
+</body>
+
+</html>

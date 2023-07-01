@@ -1,0 +1,38 @@
+.bg_img:first-of-type,
+.bg_img:last-of-type {
+    height: 100px;
+    background-image: none;
+}
+
+.voucher_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background-color: var(--bgcolor-darkBlue);
+}
+
+.voucher {
+    flex-basis: 90%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.voucher h2 {
+    line-height: 50px;
+    padding: 0px 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--bgcolor-orange);
+}
+
+.voucher_amount {
+    padding: 15px 0;
+}
+
+.voucher_amount,
+.voucher_amount h2 {
+    border-radius: 0 0 15px 15px;
+    background-color: var(--bgcolor-whiteTxt);
+}

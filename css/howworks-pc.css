@@ -1,0 +1,37 @@
+@media (min-width: 1366px) {
+    .how_works_desc p {
+        font-size: var(--font-p-size);
+    }
+
+    .bg_img {
+        height: 500px;
+    }
+
+    .how_works_orange_wrapper {
+        padding: 7vh 10px 6vh;
+    }
+
+    .how_works_orange_wrapper h2 {
+        margin-bottom: 30px;
+    }
+
+    .how_works_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .how_works_orange_wrapper .how_works_desc {
+        max-width: 550px;
+    }
+
+    .how_works_desc {
+        padding: 80px 120px;
+    }
+
+    .how_works_desc:last-child {
+        margin-top: 40px;
+    }
+}

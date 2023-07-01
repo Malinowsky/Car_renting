@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .how_works_desc {
+        padding: 40px 70px;
+        margin: 5vh auto 20px;
+    }
+
+    .voucher_wrapper {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .voucher {
+        flex-basis: 60%;
+    }
+
+    .voucher h2 {
+        line-height: 80px;
+        
+    }
+}
+
+
+@media (min-width: 1280px) {
+    div.how_works_desc {
+        margin-top: 8vh;
+    }
+
+    .voucher_wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .voucher {
+        flex-basis: 45%;
+        padding: 50px 30px;
+    }
+
+    .voucher_amount {
+        padding: 25px 0;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    div.how_works_desc {
+        padding: 80px 250px;
+    }
+
+    .voucher_wrapper {
+        max-width: 1300px;
+    }
+
+    .voucher {
+        flex-basis: 45%;
+        padding: 60px 60px;
+    }
+}
