@@ -68,6 +68,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -78,7 +82,8 @@ label {
 /* ---------------- blue button ---------------- */
 .blue_button,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+.reset-button {
     padding: 15px 25px;
     border: none;
     border-radius: 20px;
@@ -94,7 +99,8 @@ input[type=submit] {
 
 .blue_button:hover,
 input[type=button]:hover,
-input[type=submit]:hover {
+input[type=submit]:hover,
+.reset-button:hover {
     background-color: var(--bghover-darkBlue);
 }
 

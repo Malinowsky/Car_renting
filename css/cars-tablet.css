@@ -28,10 +28,18 @@
         height: 20px;
         width: 20px;
     }
+
+    .reset-button {
+        width: 240px;
+    }
 }
 
 @media (min-width: 1366px) {
     .car {
         flex-basis: 420px;
+    }
+
+    .reset-button {
+        width: 290px;
     }
 }

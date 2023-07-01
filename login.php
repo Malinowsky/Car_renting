@@ -99,24 +99,27 @@
                 $storedPasswordHash = $row["password_hash"];
                 if (password_verify($password, $storedPasswordHash)) {
                     // Pomyślne uwierzytelnienie - możesz wykonać dalsze operacje, np. przekierowanie na inną stronę
-                    echo "Logowanie pomyślne!";
-                    // Przekieruj na inną stronę
+
                     session_start();
                     $_SESSION['logged_in'] = true;
                     $_SESSION['user_id'] = $row['user_id']; // Jeśli masz identyfikator użytkownika w tabeli, to możesz go też zapisać w sesji
 
-                    exit(); // Zakończ skrypt po przekierowaniu
+                     // Zakończ skrypt po przekierowaniu
                 } else {
                     // Nieprawidłowe hasło
-                    echo "Nieprawidłowe hasło!";
+                    echo '<script>alert("Nieprawidłowe hasło lub email");</script>';
                 }
             } else {
                 // Użytkownik nie istnieje
-                echo "Użytkownik nie istnieje!";
+                echo '<script>alert("Użytkownik nie istnieje!");</script>';
             }
 
             // Zamknij połączenie z bazą danych
             $db->close();
+            echo '<script>
+               alert("Logowanie pomyślne!");
+               window.location.href = "index.html";
+               </script>';
         }
         ?>
 

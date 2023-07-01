@@ -96,14 +96,14 @@
                     <h2>bon na samochód</h2>
                     <div class="voucher_amount">
                         <h2>Bon 300 zł</h2>
-                        <input type="submit" value="KUP">
+                        <input type="submit" value="KUP" onclick="buyVoucherPopup()">
                     </div>
                 </div>
                 <div class="voucher">
                     <h2>bon na samochód</h2>
                     <div class="voucher_amount">
                         <h2>Bon 300 zł</h2>
-                        <input type="submit" value="KUP">
+                        <input type="submit" value="KUP" onclick="buyVoucherPopup()">
                     </div>
                 </div>
             </div>
@@ -142,6 +142,7 @@
     </div>
 
     <script src="js/toggle.js"></script>
+    <script src="js/buy_voucher.js"></script>
 </body>
 
 </html>

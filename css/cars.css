@@ -95,9 +95,15 @@ header+form h2 {
     text-align: center;
 }
 
-header+form input[type=submit], .sort_by {
+header+form input[type=submit], 
+.sort_by, .reset-button {
     display: block;
     margin: 20px auto 0;
+}
+
+.reset-button {
+    width: 190px;
+    text-align: center;
 }
 
 .sort_by {

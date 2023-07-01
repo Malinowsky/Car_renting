@@ -1,6 +1,6 @@
 @media (min-width: 1366px) {
     .car {
-        flex-basis: 900px;
+        flex-basis: 1200px;
     }
 
     .go_to_buttons,
@@ -20,5 +20,14 @@
     .car_data {
         width: 60%;
         margin: 30px auto;
+    }
+
+    .car_photo {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .car_info {
+        border-radius: 20px;
     }
 }

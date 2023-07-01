@@ -96,18 +96,20 @@
 
             <h2>Sortuj według:</h2>
             <select class="sort_by" name="sort_by">
+                <option value="default">Brak sortowania</option>
                 <option value="price_asc">Cena (rosnąco)</option>
                 <option value="price_desc">Cena (malejąco)</option>
                 <option value="power_asc">Moc (rosnąco)</option>
                 <option value="power_desc">Moc (malejąco)</option>
             </select>
-
+            
+            <a href="cars.php" class="reset-button">Resetuj filtry</a>
             <input type="submit" value="Filtruj">
         </form>
 
 
         <article>
-            <?php
+        <?php
             try {
                 $db = new PDO('sqlite:inzynieria.db');
             } catch (PDOException $e) {
@@ -148,48 +150,48 @@
             }
 
 
-  while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    $id = $row["car_id"];
-    $make = $row['make'];
-    $model = $row['model'];
-    $full_name = $make . ' ' . $model;
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $id = $row["car_id"];
+                $make = $row['make'];
+                $model = $row['model'];
+                $full_name = $make . ' ' . $model;
 
-    $image = $row['image'];
-    $horsepower = $row['horsepower'];
-    $acceleration = $row['acceleration_0_to_100'];
-    $transmission = $row['transmission_type'];
-    $daily_rate = $row['daily_rate']; // Pobierz cenę dziennego wynajmu
+                $image = $row['image'];
+                $horsepower = $row['horsepower'];
+                $acceleration = $row['acceleration_0_to_100'];
+                $transmission = $row['transmission_type'];
+                $daily_rate = $row['daily_rate']; // Pobierz cenę dziennego wynajmu
 
-    echo '<div class="car">';
-    echo '    <div class="car_photo">';
-    echo '        <a href="cars-html/lamboEvo.html"><img src="' . $image . '" alt="' . $full_name . '"></a>';
-    echo '    </div>';
-    echo '    <div class="car_info">';
-    echo '        <h2>' . $full_name . '</h2>';
-    echo '        <div class="short_info">';
-    echo '              <div class="short_info_elemet_up">';
-    echo '                  <div class="short_info_element">';
-    echo '                      <i class="fa-solid fa-wrench"></i> <p>' . $horsepower . 'km</p>';
-    echo '                  </div>';
-    echo '                  <div class="short_info_element">';
-    echo '                      <i class="fa-solid fa-gauge"></i> <p>' . $acceleration . 's do 100km/h</p>';
-    echo '                  </div>';
-    echo '                  <div class="short_info_element">';
-    echo '                      <i class="fa-sharp fa-solid fa-gears"></i> <p>' . $transmission . '</p>';
-    echo '                  </div>';
-    echo '              </div>';
-    echo '              <div class="short_info_elemet_down">';
-    echo '                  <div class="short_info_element">'; // Dodatkowy element dla ceny dziennego wynajmu
-    echo '                      <i class="fa-solid fa-coins"></i> <p>' . $daily_rate . ' zł dziennie</p>';
-    echo '                  </div>';
-    echo '                  <a href="rent.php?car_id=',$id,'"><button class="blue_button">Wypożycz</button></a>';
-    echo '              </div>';
-    echo '        </div>';
-    echo '    </div>';
-    echo '</div>';
-}
+                echo '<div class="car">';
+                echo '    <div class="car_photo">';
+                echo '        <a href="rent.php?car_id=' . $id . '"><img src="' . $image . '" alt="' . $full_name . '"></a>';
+                echo '    </div>';
+                echo '    <div class="car_info">';
+                echo '        <h2>' . $full_name . '</h2>';
+                echo '        <div class="short_info">';
+                echo '              <div class="short_info_elemet_up">';
+                echo '                  <div class="short_info_element">';
+                echo '                      <i class="fa-solid fa-wrench"></i> <p>' . $horsepower . 'km</p>';
+                echo '                  </div>';
+                echo '                  <div class="short_info_element">';
+                echo '                      <i class="fa-solid fa-gauge"></i> <p>' . $acceleration . 's do 100km/h</p>';
+                echo '                  </div>';
+                echo '                  <div class="short_info_element">';
+                echo '                      <i class="fa-sharp fa-solid fa-gears"></i> <p>' . $transmission . '</p>';
+                echo '                  </div>';
+                echo '              </div>';
+                echo '              <div class="short_info_elemet_down">';
+                echo '                  <div class="short_info_element">'; // Dodatkowy element dla ceny dziennego wynajmu
+                echo '                      <i class="fa-solid fa-coins"></i> <p>' . $daily_rate . ' zł/doba</p>';
+                echo '                  </div>';
+                echo '                  <a href="rent.php?car_id=',$id,'"><button class="blue_button">Wypożycz</button></a>';
+                echo '              </div>';
+                echo '        </div>';
+                echo '    </div>';
+                echo '</div>';
+            }
 
-?>
+            ?>
 
         </article>
 

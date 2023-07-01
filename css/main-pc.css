@@ -12,7 +12,8 @@
 
     .blue_button,
     input[type=button],
-    input[type=submit] {
+    input[type=submit],
+    .reset-button {
         padding: 25px 55px;
     }
 

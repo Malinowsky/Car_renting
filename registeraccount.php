@@ -88,6 +88,8 @@
                         <input type="email" name="email" id="email" required>
                         <label for="password">wpisz hasło:</label>
                         <input type="password" name="password" id="password">
+                        <label for="confirm-password">potwierdź hasło:</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
                         <input type="submit" value="zarejestruj się">
                     </form>
                     <div class="login_options">
@@ -96,25 +98,40 @@
                 </div>
             </div>
         </main>
+
         <?php
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Pobierz dane z formularza
             $email = $_POST["email"];
             $password = $_POST["password"];
+            $confirmPassword = $_POST["confirm-password"];
 
-            // Połącz z bazą danych
-            $db = new SQLite3("inzynieria.db");
+            // Sprawdzenie, czy hasła są zgodne
+            if ($password !== $confirmPassword) {
+                echo '<script>alert("Hasła nie są zgodne!");</script>';
+            } else {
+                // Sprawdzenie, czy hasło spełnia kryteria (min. 8 znaków, duża litera, mała litera, cyfra, znak specjalny)
+                $regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
+                if (!preg_match($regex, $password)) {
+                    echo '<script>alert("Hasło musi zawierać co najmniej 8 znaków, w tym dużą literę, małą literę, cyfrę i znak specjalny!");</script>';
+                } else {
+                    // Połącz z bazą danych
+                    $db = new SQLite3("inzynieria.db");
 
-            // Zabezpiecz dane przed wstrzykiwaniem SQL
-            $email = $db->escapeString($email);
-            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                    // Zabezpiecz dane przed wstrzykiwaniem SQL
+                    $email = $db->escapeString($email);
+                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-            // Wstaw nowe konto do bazy danych
-            $query = "INSERT INTO users (email, password_hash) VALUES ('$email', '$passwordHash')";
-            $db->exec($query);
+                    // Wstaw nowe konto do bazy danych
+                    $query = "INSERT INTO users (email, password_hash) VALUES ('$email', '$passwordHash')";
+                    $db->exec($query);
 
-            // Zamknij połączenie z bazą danych
-            $db->close();
+                    // Zamknij połączenie z bazą danych
+                    $db->close();
+
+                    echo '<script>alert("Rejestracja zakończona powodzeniem!");</script>';
+                }
+            }
         }
         ?>
 
